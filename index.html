@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale:1.0">
+  <meta name="description" content="The web development portfolio of Aspen Hollyer">
+  <meta name="author" content="Aspen Hollyer">
+	<title>Aspen Hollyer</title>
+  <!----- Styles ----->
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300" rel="stylesheet">
+  <script src="https://use.fontawesome.com/0b323d712f.js" async></script>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!----------- Navbar ---------->
+  <!-- <nav class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="sn-link" href="{% url 'home' %}">AspenHollyer.Com</a>
+    <a class="sn-link" href="{% url 'work' %}">Work</a>
+    <a class="sn-link" href="{% url 'about' %}">About</a>
+    <a class="sn-link" href="{% url 'contact' %}">Contact</a>
+    <a class="sn-link" href="https://ahollyer.github.io">Blog</a>
+    <ul class="link-list">
+      <li><a class="sn-link" href="mailto:aspen.hollyer@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+      <li><a class="sn-link" href="https://github.com/ahollyer" target="_blank"><i class="fa fa-github"></i></a></li>
+      <li><a class="sn-link" href="https://www.linkedin.com/in/aspen-hollyer" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+      <li><a class="sn-link" href="https://twitter.com/aspen_hollyer" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a class="sn-link" href=""></a></li>
+    </ul>
+  </nav>
+  <div class="pancake">
+    <span onclick="openNav()"><i class="fa fa-navicon"></i></span>
+  </div> -->
+
+
+    <!--------- Canvas ---------->
+    <h1 class="title">Hi, I'm Aspen. I make <span class="show">fun web apps</span><span class="hide purple">web apps fun</span>.</h1>
+    <div class="canvas">
+    </div>
+    <!---------- Drawing Tools ---------->
+    <div class="controls">
+      <button name="marker">Marker</button>
+      <button name="eraser">Eraser</button>
+      <button name="rainbow">Rainbow!</button>
+    	<button name="clear">Clear Canvas</button>
+    	<!-- <button name="change">Change Grid Size</button> -->
+    	<button name="toggle">Toggle Outline</button><br>
+    </div>
+    <!---------- Social Links -------->
+    <ul class="link-list">
+      <li><a class="sn-link" href="mailto:aspen.hollyer@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+      <li><a class="sn-link" href="https://github.com/ahollyer" target="_blank"><i class="fa fa-github"></i></a></li>
+      <li><a class="sn-link" href="https://www.linkedin.com/in/aspen-hollyer" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+    </ul>
+
+    <!--------------- About ---------------->
+    <div class="about section">
+      <div class="overlay">
+        <div class="content">
+          <p>That's me, talking about sticky notes.</p>
+          <p>I'm a Houston-based software developer. My background is in English, secondary education, and instructional design. Professional interests include gamification, IoT, and user-centered design.</p>
+          <p>I'm a sci-fi lover, fabulous cook, and puzzle fanatic&mdash;sudoku, jigsaws, crosswords, you name it! I'm also a hackathon organizer and avid bullet journaler, currently living the tiny home life with a husband and two cats.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="work">
+      <h2>Recent Work</h2>
+      <p>I code mostly in JavaScript and Python.</p>
+      <p>Lately, I've been working on an inventory/scheduling system with a custom rules engine. I've also been building IoT solutions for <a class="purple" href="https://www.timbergrove.com" target="_blank">Timbergrove</a> with open source tools like Grafana and the TICK stack. I recently did the <a class="purple" href="https://www.cazinvestments.com" target="_blank">CAZ Investments</a> website and CMS.</p>
+      <!------------ CAZ Investments ---------->
+      <p style="text-align:center">
+        <img src="img/caz-ss.jpg" alt="CAZ Investments">
+        <img src="img/iot-ss.jpg" alt="Timbergrove IoT">
+      </p>
+      <h2 class="mt">Recent Play</h2>
+      <p>I had fun with CSS making <a class="purple" href="http://blackjack-bunny.aspenhollyer.com" target="_blank">Blackjack Bunny</a>. I'm also finishing my old-school terminal game, Unicorns vs. Fairies. Lastly, I've been working with a group on a nonprofit project for a few months now, so will definitely announce once that's done.</p>
+      <p style="text-align:center;">
+        <img src="img/blackjack-ss.jpg" alt="Blackjack Bunny">
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/nlDod2JRC9I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </p>
+    </div>
+
+
+    <!---------- Social Links -------->
+    <ul class="link-list">
+      <li><a class="sn-link" href="mailto:aspen.hollyer@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+      <li><a class="sn-link" href="https://github.com/ahollyer" target="_blank"><i class="fa fa-github"></i></a></li>
+      <li><a class="sn-link" href="https://www.linkedin.com/in/aspen-hollyer" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+    </ul>
+
+
+
+  <!---------- Scripts -------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/debounce.min.js"></script>
+  <script src="js/scratchoff.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/draw.js"></script>
+</body>
+</html>
