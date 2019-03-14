@@ -1,102 +1,193 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale:1.0">
-  <meta name="description" content="The web development portfolio of Aspen Hollyer">
-  <meta name="author" content="Aspen Hollyer">
-	<title>Aspen Hollyer</title>
-  <!----- Styles ----->
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300" rel="stylesheet">
-  <script src="https://use.fontawesome.com/0b323d712f.js" async></script>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-  <link type="text/css" rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-  <!----------- Navbar ---------->
-  <!-- <nav class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a class="sn-link" href="{% url 'home' %}">AspenHollyer.Com</a>
-    <a class="sn-link" href="{% url 'work' %}">Work</a>
-    <a class="sn-link" href="{% url 'about' %}">About</a>
-    <a class="sn-link" href="{% url 'contact' %}">Contact</a>
-    <a class="sn-link" href="https://ahollyer.github.io">Blog</a>
-    <ul class="link-list">
-      <li><a class="sn-link" href="mailto:aspen.hollyer@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-      <li><a class="sn-link" href="https://github.com/ahollyer" target="_blank"><i class="fa fa-github"></i></a></li>
-      <li><a class="sn-link" href="https://www.linkedin.com/in/aspen-hollyer" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-      <li><a class="sn-link" href="https://twitter.com/aspen_hollyer" target="_blank"><i class="fa fa-twitter"></i></a></li>
-      <li><a class="sn-link" href=""></a></li>
-    </ul>
-  </nav>
-  <div class="pancake">
-    <span onclick="openNav()"><i class="fa fa-navicon"></i></span>
-  </div> -->
+	<head>
+		<title>Aspen Hollyer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-    <!--------- Canvas ---------->
-    <h1 class="title">Hi, I'm Aspen. I make <span class="show">fun web apps</span><span class="hide purple">web apps fun</span>.</h1>
-    <div class="canvas">
-    </div>
-    <!---------- Drawing Tools ---------->
-    <div class="controls">
-      <button name="marker">Marker</button>
-      <button name="eraser">Eraser</button>
-      <button name="rainbow">Rainbow!</button>
-    	<button name="clear">Clear Canvas</button>
-    	<!-- <button name="change">Change Grid Size</button> -->
-    	<button name="toggle">Toggle Outline</button><br>
-    </div>
-    <!---------- Social Links -------->
-    <ul class="link-list">
-      <li><a class="sn-link" href="mailto:aspen.hollyer@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-      <li><a class="sn-link" href="https://github.com/ahollyer" target="_blank"><i class="fa fa-github"></i></a></li>
-      <li><a class="sn-link" href="https://www.linkedin.com/in/aspen-hollyer" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-    </ul>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<!-- <span class="logo"><img src="images/aspen_straight_on_square.jpg" alt="Aspen Hollyer" /></span> -->
+						<h1>Aspen Hollyer</h1>
+						<p>
+							Computer Programmer focused on Web Applications, IoT, and Civic Tech
+							<br />
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/aspen-hollyer/" target="_blank" class="icon fa-linkedin alt"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://github.com/ahollyer" target="_blank" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="images/aspen_hollyer_resume.pdf" target="_blank" class="icon fa-file-pdf-o alt"><span class="label">Resume</span></a></li>
+							</ul>
+						</p>
+					</header>
 
-    <!--------------- About ---------------->
-    <div class="about section">
-      <div class="overlay">
-        <div class="content">
-          <p>That's me, talking about sticky notes.</p>
-          <p>I'm a Houston-based software developer. My background is in English, secondary education, and instructional design. Professional interests include gamification, IoT, and user-centered design.</p>
-          <p>I'm a sci-fi lover, fabulous cook, and puzzle fanatic&mdash;sudoku, jigsaws, crosswords, you name it! I'm also a hackathon organizer and avid bullet journaler, currently living the tiny home life with a husband and two cats.</p>
-        </div>
-      </div>
-    </div>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">About</a></li>
+							<li><a href="#first">Recent Work</a></li>
+							<li><a href="#second">Recent Play</a></li>
+							<li><a href="#cta">Contact</a></li>
+						</ul>
+					</nav>
 
-    <div class="work">
-      <h2>Recent Work</h2>
-      <p>I code mostly in JavaScript and Python.</p>
-      <p>Lately, I've been working on an inventory/scheduling system with a custom rules engine. I've also been building IoT solutions for <a class="purple" href="https://www.timbergrove.com" target="_blank">Timbergrove</a> with open source tools like Grafana and the TICK stack. I recently did the <a class="purple" href="https://www.cazinvestments.com" target="_blank">CAZ Investments</a> website and CMS.</p>
-      <!------------ CAZ Investments ---------->
-      <p style="text-align:center">
-        <img src="img/caz-ss.jpg" alt="CAZ Investments">
-        <img src="img/iot-ss.jpg" alt="Timbergrove IoT">
-      </p>
-      <h2 class="mt">Recent Play</h2>
-      <p>I had fun with CSS making <a class="purple" href="http://blackjack-bunny.aspenhollyer.com" target="_blank">Blackjack Bunny</a>. I'm also finishing my old-school terminal game, Unicorns vs. Fairies. Lastly, I've been working with a group on a nonprofit project for a few months now, so will definitely announce once that's done.</p>
-      <p style="text-align:center;">
-        <img src="img/blackjack-ss.jpg" alt="Blackjack Bunny">
-        <iframe width="400" height="300" src="https://www.youtube.com/embed/nlDod2JRC9I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </p>
-    </div>
+				<!-- Main -->
+					<div id="main">
 
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>About</h2>
+										</header>
+										<p>I'm a Houston-based software developer with a background in education. My professional interests include full-stack web development, IoT, gamification, and user-centered design. I work for <a href="https://timbergrove.com" target="_blank">Timbergrove</a>.</p>
+										<p>On a personal note, I'm a sci-fi lover, awesome cook, and puzzle fanatic (sudoku, jigsaws, crosswords--you name it). I'm into the civic tech scene here in Houston and enjoy volunteering regularly.</p>
+										<ul class="actions">
+											<!-- <li><a href="generic.html" class="button">Learn More</a></li> -->
+										</ul>
+									</div>
+									<span class="image"><img src="images/aspen_mushrooms.jpg" alt="" /></span>
+								</div>
+							</section>
 
-    <!---------- Social Links -------->
-    <ul class="link-list">
-      <li><a class="sn-link" href="mailto:aspen.hollyer@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-      <li><a class="sn-link" href="https://github.com/ahollyer" target="_blank"><i class="fa fa-github"></i></a></li>
-      <li><a class="sn-link" href="https://www.linkedin.com/in/aspen-hollyer" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-    </ul>
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>Recent Work</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="icon major style1 fa-sitemap"></span>
+										<h3>Website/CMS</h3>
+										<p>Client Work. <a href="https://www.cazinvestments.com" target="_blank">CAZ Investments</a> website migration and CMS development. Tech stack includes HTML, Sass, JS, Python (Wagtail), PostgreSQL, and CircleCI + CloudFoundry for CI/CD.</p>
+									</li>
+									<li>
+										<span class="icon major style3 fa-tasks"></span>
+										<h3>Rules Engine</h3>
+										<p>Client Work. Inventory & Task Management, automated workflows, and more based around a custom rules engine. Basically a scaled-down ERP/SAP for small businesses. Tech stack includes MEAN, RabbitMQ, AWS Delivery Pipeline, Docker, Jenkins.</p>
+									</li>
+									<li>
+										<span class="icon major style5 fa-cogs"></span>
+										<h3>IoT Platform</h3>
+										<p>Product Development/R&D. Includes hardware, software, and data integrations. Tech stack varies but includes AngularJS, Grafana, InfluxDB/TICK, NodeRED, IBM Watson IoT, Kafka, AWS SQS, AWS Lambda, plus sensor/gateway hardware and firmware.</p>
+									</li>
+								</ul>
+								<!-- <footer class="major"> -->
+									<!-- <p>Reach out for more details.</p> -->
+									<!-- <ul class="actions special">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul> -->
+								<!-- </footer> -->
+							</section>
 
+						<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>Recent Play</h2>
+									<p>My works in progress. Volunteer stuff, plus things I tinker with in my spare time.</p>
+								</header>
+								<ul class="statistics">
+										<li class="style1">
+											<span class="icon fa-gamepad"></span>
+											<strong>Game</strong> Pink Punk<br/>
+											<a href="https://ahollyer.github.io/pinky-punky/" target="_blank">Play Now</a>
+										</li>
+									<li class="style2">
+										<span class="icon fa-smile-o"></span>
+										<strong>IoT</strong>
+										Happy Button<br/>
+										<a href="https://github.com/ahollyer/happy-button" target="_blank">See Code</a>
+									</li>
+									<li class="style3">
+										<span class="icon fa-money"></span>
+										<strong>Game</strong> Blackjack Bunny<br/>
+										<a href="http://blackjack-bunny.aspenhollyer.com/" target="_blank">Play Now</a>
+									</li>
+									<li class="style4">
+										<span class="icon fa-mobile-phone"></span>
+										<strong>PWA</strong> CASN App<br/>
+										<a href="https://github.com/d-m-wilson/casn-app/tree/aspen/feature/setup_angular_frontend" target="_blank">See Code</a>
+									</li>
+									<li class="style5">
+										<span class="icon fa-hand-peace-o"></span>
+										<strong>Game</strong> Animal Matcher<br/>
+										<a href="https://ahollyer.github.io/drag-drop/" target="_blank">Play Now</a>
+									</li>
+								</ul>
+								<p class="content">As a professional programmer, I think it's still important to make time for projects that do absolutely nothing for your career. I try to build silly little things like this to learn about new technologies and reignite the simple joy that comes from making a computer do something cool. Hopefully these not-so-polished examples of my work give you some idea of who I am as a coder, without all the slick frameworks, agile processes, and hours of QA that come along with modern application development.</p>
+								<!-- <footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer> -->
+							</section>
 
+						<!-- Get Started -->
+							<section id="cta" class="main special">
+								<header class="major">
+									<h2>Contact</h2>
+									<p>Please feel free to reach out regarding contract work or nonprofit projects.<br />
+									I'm also interested in conferences and tech meetups.</p>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="mailto:aspen.hollyer@gmail.com" class="button primary"><i class="fa fa-envelope alt"></i> E-mail Me</a></li>
+									</ul>
+								</footer>
+							</section>
 
-  <!---------- Scripts -------->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="js/debounce.min.js"></script>
-  <script src="js/scratchoff.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/draw.js"></script>
-</body>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section style="display:flex;justify-content:center;width:100%;">
+							<!-- <h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl> -->
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/aspen-hollyer/" target="_blank" class="icon fa-linkedin alt"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://github.com/ahollyer" target="_blank" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="images/aspen_hollyer_resume.pdf" target="_blank" class="icon fa-file-pdf-o alt"><span class="label">Resume</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Aspen Hollyer. Design Modified From <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
